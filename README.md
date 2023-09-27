@@ -1,5 +1,5 @@
 # VortoNeX
-The Full Non-linear Vortex Tube-Vorton Method (FTVM)
+The Full Non-linear Vortex Tube-Vorton Method (FTVM; Pimentel, 2023)
 
 The concept of detached vorticity from the entire surface leads to the next CFD generation!
 
