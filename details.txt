@@ -30,6 +30,8 @@ proved numerically as the current development evolves (validated for the viscous
 theoretical point of view, it could be inconvenient to consider the current scheme as valid since the diffusion of vorticity through the 
 viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly conservative (circulation and vorticity)...let's see what happens.
 
+-The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first result corresponds to the steady solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
+
 If you have more questions, please do not hesitate to contact me via e-mail.
 
 This file will be updated as needed.
