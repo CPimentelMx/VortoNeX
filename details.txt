@@ -6,7 +6,7 @@ changes the order of some groups of nodes). Altough, the meshing generation proc
 separation must be selected one by one!).
 
 -Please, only use positive angles of attack (AoA) or modify the code to solve for negative ones...(it is related to the location of the 
- nascent vortex; the vorton are created over but not under the plate).
+ nascent vortex; the vortons are created over but not under the plate).
 
 -The post-stall condition (detachment model 2) is under development, thus is not working properly yet. Must be determined the way to 
  correctly assembly the system of equations (treatment of the plate's leading edge) and the hydrodynamic load calculation. Related to 
@@ -15,9 +15,7 @@ separation must be selected one by one!).
 
 -Parameter Phi (in uppercase) is related to the total wake length. For example, to obtain a steady-state solution (if one is supposed to 
 exist), you must use large values (e.g., 40). To capture the unsteady behavior from the first iterations, a lower value (e.g., 0.1) must 
-be used; the default one is 1. On the other side, the parameter phi (in lowercase) is related to the first row length. Large values throw 
-far downstream to the first layer of vortons, deforming the grid sharply. A unitary value is suggested, which is also related to a unitary 
-Courant number.
+be used; the default one is 1. On the other side, the parameter phi (in lowercase) is related to the first wake row length. Large values throw far downstream to the first layer of vortons, deforming the grid sharply. A unitary value is suggested, which is also related to a unitary Courant number.
 
 -Parameter "tolerance radius" avoids obtaining an overshooted induced velocity between two close calculation points (vorton-node or 
 vorton-vorton). However, small values such as the default one (1e-8) work fine due to the well-behaved regularization functions used 
@@ -30,8 +28,7 @@ vortons tend to overgrow).
 -Until now, it has been assumed that viscous solutions can be perfomed through the current method; however, such a condition must be 
 proved numerically as the current development evolves (validated for the viscous region with a higher number of elements). From a 
 theoretical point of view, it could be inconvenient to consider the current scheme as valid since the diffusion of vorticity through the 
-viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly conservative (circulation and vorticity)...
-let's see what happens.
+viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly conservative (circulation and vorticity)...let's see what happens.
 
 If you have more questions, please do not hesitate to contact me via e-mail.
 
