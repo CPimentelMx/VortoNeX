@@ -1,5 +1,7 @@
 Some aspects to consider:
 
+-For better comprehension of the current code, it is recommended to be involved with both related previous developments: The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full Multi-wake Vortex Lattice Method (UFVLM, 2022).
+
 -There are seven (7) predefined meshes available, which were generated in the GiD's preprocessor. For both 10x10 meshes, some special 
  treatment is performed in order to make them compatible with the main program structure (during the mesh generation, the preprocesor 
  changes the order of some groups of nodes). Altough, the meshing generation process could be cumbersome (the edges with prescribed flow 
@@ -33,8 +35,7 @@ Some aspects to consider:
  the viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly conservative (circulation and 
  vorticity)...let's see what happens.
 
--The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first result corresponds to the 
- steady solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
+-The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first group of results correspond to the 'steady' solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
 
  BUGS/OTHER:
 -The line 62 of the main .f90 file must be changed from:
