@@ -36,7 +36,7 @@ Some aspects to consider:
 -The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first result corresponds to the 
  steady solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
 
- BUGS:
+ BUGS/OTHER:
 -The line 62 of the main .f90 file must be changed from:
  read(1,*);read(1,*) input%kin_visc         ! fluid kinematic viscosity (nu; e.g., unitary)
  to:
