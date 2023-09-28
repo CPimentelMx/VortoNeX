@@ -11,7 +11,11 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
 -Please, only use positive angles of attack (AoA) or modify the code to solve for negative ones...(it is related to the location of the 
  nascent vortex; the vortons are created above but not under the plate).
 
--The post-stall condition (detachment model 2) is under development, thus is not working properly yet (drag goes to zero as the AoA increases; lift also does, but it is expected). Must be determined the way to correctly assembly the system of equations (treatment of the plate's leading edge) and the hydrodynamic load calculation. Related to this last, an additional scheme is being implemented based on the procedure described in "Simulation of the Aerodynamics of Buildings and Structures by means of the Closed Vortex Loop Method" (Gutnikov, 2006).
+-The post-stall condition (detachment model 2) is under development, thus is not working properly yet (drag goes to zero as the AoA
+ increases; lift also does, but it is expected). Must be determined the way to correctly assembly the system of equations (treatment of 
+ the plate's leading edge) and the hydrodynamic load calculation. Related to this last, an additional scheme is being implemented based 
+ on the procedure described in "Simulation of the Aerodynamics of Buildings and Structures by means of the Closed Vortex Loop Method" 
+ (Gutnikov, 2006).
 
 -Parameter Phi (in uppercase) is related to the total wake length. For example, to obtain a steady-state solution (if one is supposed to 
  exist), you must use large values (e.g., 40). To capture the unsteady behavior from the first iterations, a lower value (e.g., 0.1) 
@@ -33,7 +37,8 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
  the viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly conservative (circulation and 
  vorticity)...let's see what happens.
 
--The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first group of results correspond to the 'steady' solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
+-The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first group of results correspond
+ to the 'steady' solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
 
 -Three (3) vorticity crossing/penetration schemes are implemented. Check them in the corresponding updated pre-print in Researchgate.net
 
