@@ -9,7 +9,7 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
  separation must be selected one by one!).
 
 -Please, only use positive angles of attack (AoA) or modify the code to solve for negative ones...(it is related to the location of the 
- nascent vortex; the vortons are created over but not under the plate).
+ nascent vortex; the vortons are created above but not under the plate).
 
 -The post-stall condition (detachment model 2) is under development, thus is not working properly yet. Must be determined the way to 
  correctly assembly the system of equations (treatment of the plate's leading edge) and the hydrodynamic load calculation. Related to 
