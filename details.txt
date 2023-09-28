@@ -32,7 +32,14 @@ viscosity 'would' only be applied to non-conservative fields, whereas the curren
 
 -The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first result corresponds to the steady solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
 
+ BUGS:
+-The line 62 of the main .f90 file must be changed from:
+ read(1,*);read(1,*) input%kin_visc         ! fluid kinematic viscosity (nu; e.g., unitary)
+ to:
+ read(1,*);read(1,*) input%kin_visc         ! fluid kinematic viscosity (nu; e.g., 0)
+ Zero viscosity must be selected for inviscid flow.
+
 If you have more questions, please do not hesitate to contact me via e-mail.
 
-This file will be updated as needed.
+This file will be periodically updated as needed.
                                              
