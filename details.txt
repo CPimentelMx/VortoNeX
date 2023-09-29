@@ -31,16 +31,17 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
  higher values than the default one (1e-8) could be explored in order to avoid some instability issues (under certain conditions, some 
  vortons tend to overgrow).
 
--Until now, it has been assumed that viscous solutions can be perfomed through the current method; however, such a condition must be 
+-Until now, it has been assumed that viscous solutions can be performed through the current method; however, such a condition must be 
  proved numerically as the current development evolves (validated for the viscous region with a higher number of elements). From a 
- theoretical point of view, it could be inconvenient to consider the current scheme as valid since the diffusion of vorticity through 
- the viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly conservative (circulation and 
- vorticity)...let's see what happens.
+ theoretical point of view, it could be tricky to consider the current scheme as valid since the diffusion of vorticity through the 
+ viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly conservative (circulation and  
+ vorticity)...let's see what happens and if it is possible to correctly justify the viscous version.
 
 -The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first group of results correspond
  to the 'steady' solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
 
--Three (3) vorticity crossing/penetration schemes are implemented. Check them in the corresponding updated pre-print in Researchgate.net
+-Three (3) vorticity crossing/penetration schemes are implemented. Check their details in the corresponding updated pre-print in 
+ Researchgate.net
 
  BUGS/OTHER:
 -The line 62 of the main .f90 file must be changed from:
