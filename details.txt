@@ -51,5 +51,5 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
 
 If you have more questions, please do not hesitate to contact me via e-mail.
 
-This file will be periodically updated as needed.
+This file will be eventually updated as needed.
                                              
