@@ -44,6 +44,9 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
 -Three (3) vorticity crossing/penetration schemes are implemented. Check their details in the corresponding updated pre-print in 
  Researchgate.net
 
+-In order to correctly verify the described procedure in Appendix A of the corresponding pre-print, you must consider that for the  
+ second step (step=2) such a vorton has the id i=13 (after emitting 12 vortons), which in the first step had the id i=1.
+
  BUGS/OTHER:
 -The line 62 of the main .f90 file must be changed from:
  read(1,*);read(1,*) input%kin_visc         ! fluid kinematic viscosity (nu; e.g., unitary)
