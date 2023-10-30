@@ -5,8 +5,7 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
 
 -There are seven (7) predefined meshes available, which were generated in the GiD's preprocessor. For both 10x10 meshes, some special 
  treatment is performed in order to make them compatible with the main program structure (during the mesh generation, the preprocesor 
- changes the order of some groups of nodes). Altough, the meshing generation process could be cumbersome (the edges with prescribed flow 
- separation must be selected one by one!).
+ changes the order of some groups of nodes).
 
 -Please, only use positive angles of attack (AoA) or modify the code to solve for negative ones...(it is related to the location of the 
  nascent vortex; the vortons are created above but not under the plate).
@@ -34,12 +33,12 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full
 -Until now, it has been assumed that viscous solutions can be performed through the current method since it can be numerically  
  justified by obtaining a zero residual through the Core Spreading Method (CSM; a similar scheme as in Strickland, 2002); however, such 
  a condition must be proved numerically as the current development evolves (validated for the viscous region with a higher number of 
- elements). From a theoretical point of view, it could be tricky to consider the current scheme as valid since it is supposed that the 
- diffusion of vorticity through the viscosity 'would' only be applied to non-conservative fields, whereas the current ones are perfectly 
- conservative (circulation and vorticity)...Let's see what happens and if it is possible to correctly justify the viscous version.
+ elements). From a theoretical point of view, it could be debatable to consider the current scheme as valid since it is supposed that 
+ the diffusion of vorticity through the viscosity 'would' only be applied to non-conservative fields, whereas the current ones are 
+ perfectly conservative (circulation and vorticity).
 
 -The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first group of results correspond
- to the 'steady' solution, while the second to the first unsteady one. The values for CL, CD and CM appear in such an order.
+ to the 'steady' solution, while the second to the first unsteady one and so on. The values for CL, CD and CM appear in such an order.
 
 -Three (3) vorticity crossing/penetration schemes are implemented. Check their details in the corresponding updated pre-print in 
  Researchgate.net
