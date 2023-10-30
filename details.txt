@@ -1,7 +1,7 @@
 Some aspects to consider:
 
 -For better comprehension of the current code, it is recommended to be involved with both related previous developments: 
-The Full Multi-wake Vortex Lattice Method (Pimentel, 2021) and The Unsteady Full Multi-wake Vortex Lattice Method (UFVLM, 2022).
+The Full Multi-wake Vortex Lattice Method (Pimentel, 2021; code: MultiVLM) and The Unsteady Full Multi-wake Vortex Lattice Method (UFVLM, 2022; code: UMultiVLM).
 
 -There are seven (7) predefined meshes available, which were generated in the GiD's preprocessor. For both 10x10 meshes, some special 
  treatment is performed in order to make them compatible with the main program structure (during the mesh generation, the preprocesor 
