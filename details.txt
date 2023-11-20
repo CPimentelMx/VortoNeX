@@ -36,7 +36,8 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021; code: MultiVLM) and T
  a condition must be proved numerically as the current development evolves (validated for the viscous region with a higher number of 
  elements). From a theoretical point of view, it could be debatable to consider the current scheme as valid since it is supposed that 
  the diffusion of vorticity through the viscosity 'would' only be applied to non-conservative fields, whereas the current ones are 
- perfectly conservative (circulation and vorticity).
+ perfectly conservative (circulation and vorticity). So, does circulation also need to be corrected (and compensated to maintain
+ stability) for a non-conservative field?
 
 -The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first group of results correspond
  to the 'steady' solution, while the second to the first unsteady one and so on. The values for CL, CD and CM appear in such an order.
