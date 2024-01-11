@@ -1,7 +1,7 @@
 # VortoNeX
 The Full Non-linear Vortex Tube-Vorton Method (FTVM; Pimentel, 2023)
 
-The concept of detached vorticity from the entire surface leads to the next generation CFD!
+The concept of inviscid detached vorticity from the entire surface leads to the next generation CFD!
 
 [![Watch the video](https://img.youtube.com/vi/vrQET2cSroY/hqdefault.jpg)](https://www.youtube.com/embed/vrQET2cSroY)
 
