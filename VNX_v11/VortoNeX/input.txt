@@ -1,0 +1,42 @@
+MESH (quad/rect/arrow)=
+4
+ITERATIONS (nsteps)=
+100
+ANGLE_OF_ATTACK (alpha)=
+90
+TIME_STEP (Dt)=
+0.0625
+CORE_RAD_INIT (sigma_zero)=
+0.0442
+NASCENT_DISTANCE (epsilon)=
+0.0442
+threads (serial/parallel)=
+8
+detachment_model (pre/post-stall)=
+2
+density (rho)=
+1
+freestream_vel (q_inf)=
+1
+characteristic_length (c)=
+1
+moment_axis_position_factor (x_cm)=
+0.25
+wake_length (Phi)=
+0.01
+first_row_wake_factor (phi)=
+1
+tolerance_radius (tol_rad)=
+1e-6
+tolerance_vorticity (tol_vort)=
+1e-6
+kinematic_viscosity (nu)=
+0.00000476
+regularization_function (g_sigma)=
+2
+vortex_stretching (vx_stretch)=
+1
+pressure_infinity (pres_inf) =
+1
+plate_thickness (thick) =
+0.0

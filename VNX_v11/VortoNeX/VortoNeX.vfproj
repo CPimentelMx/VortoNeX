@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{B4CF263C-BEB0-4A34-A24C-D9C0EC7F3C30}">
+	<Platforms>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" MultiProcessorCompilation="true" OpenMP="OpenMPParallelCode" Diagnostics="diagnosticsShowAll" DebugParameter="debugParameterAll" WarnInterfaces="true" LocalSavedScalarsZero="true" FloatingPointModel="strict" FloatingPointStackCheck="true" FloatingPointSpeculation="fpSpeculationStrict" Traceback="true" BoundsCheck="true" UninitializedVariablesCheck="true" StackFrameCheck="true" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole" StackReserveSize="75000000" StackCommitSize="75000000"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" MultiProcessorCompilation="true" OpenMP="OpenMPParallelCode" Diagnostics="diagnosticsShowAll" DebugParameter="debugParameterAll" WarnUnusedVariables="true" LocalSavedScalarsZero="true" FloatingPointModel="strict" FloatingPointStackCheck="true" FloatingPointSpeculation="fpSpeculationStrict" BoundsCheck="true" UninitializedVariablesCheck="true" StackFrameCheck="true" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole" StackReserveSize="75000000" StackCommitSize="75000000"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\arrays.f90"/>
+		<File RelativePath=".\geometry.f90"/>
+		<File RelativePath=".\gridops.f90"/>
+		<File RelativePath=".\input.txt"/>
+		<File RelativePath=".\kutta_edges.f90"/>
+		<File RelativePath=".\math.f90"/>
+		<File RelativePath=".\mesh_op.f90"/>
+		<File RelativePath=".\utils.f90"/>
+		<File RelativePath=".\VortoNeX.f90"/></Filter>
+		<File RelativePath=".\ReadMe.txt"/></Files>
+	<Globals/></VisualStudioProject>
