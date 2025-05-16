@@ -15,7 +15,8 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021; code: MultiVLM) and T
  increases; lift also does, but it is expected). Must be determined the way to correctly assembly the system of equations (treatment of 
  the plate's leading edge) and the hydrodynamic load calculation. Related to this last, an additional scheme is being implemented based 
  on the procedure described in "Simulation of the Aerodynamics of Buildings and Structures by means of the Closed Vortex Loop Method" 
- (Gutnikov, 2006).
+ (Gutnikov, 2006). UPDATE: the new version (v1.1) includes an alternative method (Dynnikova, 2006) for force calculation in post-stall 
+ condition.
 
 -Parameter Phi (in uppercase) is related to the total wake length. For example, to obtain a steady-state solution (if one is supposed to 
  exist), you must use large values (e.g., 40). To capture the unsteady behavior from the first iterations, a lower value (e.g., 0.1) 
@@ -40,7 +41,8 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021; code: MultiVLM) and T
  stability) for a non-conservative field?
 
 -The "aero_coef.dat" output file has no headers (for easy manipulation in Excel, for example), but the first group of results correspond
- to the 'steady' solution, while the second to the first unsteady one and so on. The values for CL, CD and CM appear in such an order.
+ to the 'steady' solution, while the second to the first unsteady one and so on. The values for CL, CD, CM and CN appear in such an 
+ order.
 
 -Three (3) vorticity crossing/penetration schemes are implemented. Check their details in the corresponding updated pre-print in 
  Researchgate.net
@@ -48,7 +50,7 @@ The Full Multi-wake Vortex Lattice Method (Pimentel, 2021; code: MultiVLM) and T
 -In order to correctly verify the described procedure in Appendix A of the corresponding pre-print, you must consider that for the  
  second step (step=2) such a vorton has the id i=13 (after emitting 12 vortons), which in the first step had the id i=1.
 
- BUGS/OTHER:
+ BUGS/OTHER (v1.0):
 -The line 62 of the main .f90 file must be changed from:
  read(1,*);read(1,*) input%kin_visc         ! fluid kinematic viscosity (nu; e.g., unitary)
  to:
